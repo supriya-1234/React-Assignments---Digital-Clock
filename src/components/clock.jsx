@@ -3,12 +3,7 @@ class Clock {
   constructor(props) {
     super(props);
     this.state = {
-      time:
-        new Date.getHours() +
-        ":" +
-        new Date().getMinutes() +
-        ":" +
-        new Date().getSeconds()
+      time: new Date().toLocaleString()
     };
   }
   componentDidMount() {
@@ -19,12 +14,7 @@ class Clock {
   }
   tick() {
     this.setState({
-      time:
-        new Date.getHours() +
-        ":" +
-        new Date().getMinutes() +
-        ":" +
-        new Date().getSeconds()
+      time: new Date().toLocaleString()
     });
   }
   render() {
