@@ -4,7 +4,7 @@ class Clock {
   constructor(props) {
     super(props);
     this.state = {
-      time: new Date().toLocaleString()
+      date: new Date()
     };
   }
   componentDidMount() {
@@ -15,13 +15,13 @@ class Clock {
   }
   tick() {
     this.setState({
-      time: new Date().toLocaleString()
+      date: new Date()
     });
   }
   render() {
     return (
       <div className="Clock">
-        <h3 id="time">{this.state.time}</h3>
+        <h3 id="time">{this.state.date.toLocaleString()}</h3>
       </div>
     );
   }
