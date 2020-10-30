@@ -19,8 +19,8 @@ class Clock {
   }
   render() {
     return (
-      <div id="time">
-        <h3>{this.state.date.toLocaleTimeString()}</h3>
+      <div className="Clock">
+        <h3 id="time">{this.state.date.toLocaleTimeString()}</h3>
       </div>
     );
   }
