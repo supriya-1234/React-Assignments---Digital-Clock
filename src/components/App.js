@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Clock from "./clock";
 class App extends Component {
-  class Clock {
     constructor(props) {
       super(props);
       this.state = {
